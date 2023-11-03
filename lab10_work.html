@@ -3116,9 +3116,6 @@ vertical-align: -.125em;
 <section id="exercise-3" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
 <p>Write a query against the <code>rental</code> table that returns the IDs of the customers who rented a film on July 5, 2005 (use the rental.rental_date column, and you can use the <code>date()</code> function to ignore the time component). Include a single row for each distinct customer ID.</p>
-</section>
-<section id="didnt-use-distinct-here-what-is-it-for-customer-id" class="level2">
-<h2 class="anchored" data-anchor-id="didnt-use-distinct-here-what-is-it-for-customer-id">didn’t use distinct here, what is it for?, customer id</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ans3 <span class="ot">&lt;-</span> <span class="fu">dbGetQuery</span>(con,</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;SELECT DISTINCT customer_id, rental_id, rental_date</span></span>
@@ -3312,9 +3309,6 @@ vertical-align: -.125em;
 </section>
 <section id="exercise-7" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-7">Exercise 7</h2>
-</section>
-<section id="not-sure-what-is-needed-here-summary-stats-amount-then-by-customer-id" class="level2">
-<h2 class="anchored" data-anchor-id="not-sure-what-is-needed-here-summary-stats-amount-then-by-customer-id">not sure what is needed here? summary stats, amount &amp; then by customer ID</h2>
 <p>Write a query that calculates a number of summary statistics for the payment table using <code>MAX</code>, <code>MIN</code>, <code>AVG</code> and <code>SUM</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>ans7 <span class="ot">&lt;-</span> <span class="fu">dbGetQuery</span>(con,</span>
